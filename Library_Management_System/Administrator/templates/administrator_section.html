@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Administrator Login Section</title>
+</head>
+<body>
+<h1>Welcome Admin</h1>
+<br/>
+<a href="{% url 'book:add_book' %}">Add Book</a>
+<br/>
+<a href="{% url 'book:get_book_info' %}">Book Search</a>
+<br/>
+<a href="">Book Update</a>
+<br/>
+<a href="">View Order </a>
+<br/>
+<a href="{% url 'book:view_all_book' %}">View All book</a>
+<br/>
+<a href="{% url 'administrator:logout' %}">Logout</a>
+
+</body>
+</html>

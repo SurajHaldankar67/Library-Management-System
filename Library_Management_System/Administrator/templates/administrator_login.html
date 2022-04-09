@@ -1,0 +1,18 @@
+
+
+<html>
+<head>
+    <title>
+        Administrator Login Section
+    </title>
+</head>
+<body>
+<h1> Admin Login Section</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<center>
+    <h1>Enter Below Book id</h1>
+    <form method="GET">
+  <input type="number" name="book_id"/>
+  <input type="submit" name="Submit">
+</form>
+    {% for book in book_details %}
+
+<p>Book Name : {{ book.book_title }}</p>
+
+<p>Author Name : {{ book.book_author }}</p>
+
+<p>Price : {{ book.book_cost }}</p>
+
+<p>Book Quantity : {{ book.book_quantity }}</p>
+
+<p>Description :  {{ book.book_description }}</p>
+{% endfor %}
+
+</center>
+</body>
+</html>
